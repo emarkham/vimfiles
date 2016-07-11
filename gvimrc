@@ -1,6 +1,6 @@
 "gvim config
 "set lines=50
-set columns=132
+"set columns=132
 set textwidth=0
 set nu "turn on numbering because I'm finding it useful
 set nofullscreen

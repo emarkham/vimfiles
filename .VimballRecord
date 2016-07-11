@@ -1,1 +1,2 @@
 LargeFile.vba: call delete('/Users/emarkham/.vim/plugin/LargeFile.vim')|call delete('/Users/emarkham/.vim/doc/LargeFile.txt')
+rainbow_parenthsis-4.0.vba: call delete('/usr/home/nfs/emarkham/.vim/autoload/rainbow_parenthsis.vim')|call delete('/usr/home/nfs/emarkham/.vim/doc/rainbow_parenthsis.txt')|call delete('/usr/home/nfs/emarkham/.vim/plugin/rainbow_parenthsis.vim')|call delete('/usr/home/nfs/emarkham/.vim/rainbow_parenthsis_options.vim')
