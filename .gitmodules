@@ -1,9 +1,6 @@
 [submodule "bundle/closetag"]
 	path = bundle/closetag
 	url = git://github.com/docunext/closetag.vim.git
-[submodule "bundle/nerdcommenter"]
-	path = bundle/nerdcommenter
-	url = git://github.com/scrooloose/nerdcommenter.git
 [submodule "bundle/Align"]
 	path = bundle/Align
 	url = https://github.com/vim-scripts/Align.git
@@ -31,3 +28,9 @@
 [submodule "bundle/vim-wheel"]
 	path = bundle/vim-wheel
 	url = https://github.com/reedes/vim-wheel.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "bundle/matchit"]
+	path = bundle/matchit
+	url = https://github.com/tmhedberg/matchit.git
