@@ -1,7 +1,7 @@
 # vimfiles
 
 
-    git clone http://github.com/username/dotvim.git ~/.vim  
+    git clone https://github.com/emarkham/vimfiles.git ~/.vim  
     ln -s ~/.vim/vimrc ~/.vimrc  
     ln -s ~/.vim/gvimrc ~/.gvimrc  
     cd ~/.vim  
