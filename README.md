@@ -10,7 +10,7 @@
 
 List of plugins:   
   Align  
-  YouCompleteMe  
+  VimCompletesMe
   closetag  
   csv-vim  
   gundo  
