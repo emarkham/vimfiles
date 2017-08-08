@@ -52,6 +52,12 @@ highlight CursorLine    ctermfg=NONE    ctermbg=236     cterm=NONE
 highlight CursorLineNr  ctermfg=Yellow  ctermbg=234     cterm=NONE
 highlight Cursor        ctermfg=Black   ctermbg=red     cterm=NONE
 
+
+highlight DiffAdd    cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
+highlight DiffDelete cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
+highlight DiffChange cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
+highlight DiffText   cterm=bold ctermfg=10 ctermbg=88 gui=none guifg=bg guibg=Red
+
 " Don't break words in middle
 set linebreak
 " Show incomplete paragraphs even when they don't fit on screen (avoid @'s)
