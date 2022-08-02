@@ -12,6 +12,8 @@ set linebreak
 set nolist  
 set textwidth=0
 set wrapmargin=0
+"set keymodel=startsel,stopsel
+set keymodel=startsel
 "set scrolloff=50
 " i hate sidescrolling with the mouse
 "set sidescrolloff=200
@@ -21,6 +23,8 @@ if has ('autocmd')
     autocmd GUIEnter * set visualbell t_vb=
 endif
 
+set rtp+=/usr/local/opt/fzf
+set shell=/usr/local/bin/bash\ -l
 
 " Put plugins and other crap in this dir (also on Windows)
 let vimDir = '$HOME/.vim'
@@ -65,7 +69,7 @@ set display+=lastline
 set nocompatible        " Use Vim defaults instead of 100% vi compatibility
 set backspace=2         " more powerful backspacing
 set foldcolumn=1
-set cursorline
+" set cursorline
 "set insertmode
 " I *want* to use colorcolumn here but it keeps popping up in dumb
 " places. And I don't want to fix a lot of ftplugin & syntax files
@@ -114,6 +118,10 @@ nnoremap <F5> :GundoToggle<CR>
 
 let g:gundo_right=1
 let g:gundo_preview_bottom=1
+
+
+" whatever the fuck the default Ctrl-d does in insert mode does, I hate it
+inoremap <C-d> <del>
 
 
 " Emacs-style keys on the command-line
@@ -166,6 +174,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_python_checkers=["flake8"]
+let g:syntastic_python_flake8_args="--ignore=E111,W391"
 
 " don't want python3 right now
 let g:ycm_python_binary_path = 'python'
@@ -201,3 +211,18 @@ let NERDDefaultAlign="start"
 ":%norm $daw
 "
 "qq$dawjq (note the added j) then 999@q to replay the macro many times. (Macro execution stops at the first "error" -- in this case, you'd probably hit the bottom of the file, j would not work, and the macro would stop.)
+
+
+
+autocmd BufRead,BufNewFile nginx.* set filetype=nginx
+autocmd BufRead,BufNewFile */nginx.conf.d/*.conf set filetype=nginx
+autocmd BufRead,BufNewFile */bind/zones/*.db set tabstop=8
+autocmd BufRead,BufNewFile Capfile,Gemfile,*.ru,*.rb.* set filetype=ruby
+autocmd BufRead,BufNewFile *.json set nospell
+autocmd BufRead,BufNewFile *.env.* set filetype=sh
+autocmd BufRead,BufNewFile *.as,*.js.esm set filetype=javascript
+autocmd BufRead,BufNewFile ~/.aws/credentials set filetype=dosini
+autocmd BufRead,BufNewFile *.my.cnf set filetype=dosini
+autocmd BufRead,BufNewFile .crontab set filetype=crontab
+autocmd BufRead,BufNewFile .gitignore set filetype=config
+

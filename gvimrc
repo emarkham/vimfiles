@@ -38,7 +38,7 @@ highlight ModeMsg				guifg=white		guibg=red			gui=NONE
 "highlight Normal				guifg=#f5deb3	guibg=Black
 "highlight Normal				guifg=#f5deb3	guibg=#242424
 "highlight Normal				guifg=#f5deb3	guibg=#1D1F21
-highlight Normal				guifg=#d8deb3	guibg=#0a0a0D
+highlight Normal				guifg=#d8deb3	guibg=#101018
 highlight Search				guifg=blue		guibg=#80a0ff gui=NONE
 highlight Special				guifg=Orange
 highlight Statement			guifg=Yellow								gui=NONE
@@ -57,13 +57,14 @@ au InsertLeave * hi CursorLine guifg=NONE    guibg=#292948 gui=NONE
 set guioptions=egmt
 set guioptions-=L
 
+set cursorline
 set transparency=0
 "set noanti guifont=Anonymous:h12
 "set noanti guifont=Consolas:h12
 "set anti guifont=Droid_Sans_Mono_for_Powerline:h11
-set anti guifont=Source_Code_Pro:h12
+set anti guifont=Source_Code_Pro:h16
 "set noanti guifont=ProggyCleanTT:h17
-set linespace=-3
+set linespace=-2
 "set anti guifont=PT_Mono:h12
 "set guifont=Inconsolata:h14
 "set noanti guifont=Fixed:h13
@@ -77,7 +78,9 @@ set linespace=-3
 
 ":map <D-F3> :source ~/.vim/writeroom.vim<cr>
 
-autocmd VimEnter * NERDTree
+"autocmd VimEnter * NERDTree
+set termwinsize=5*0
+autocmd VimEnter * below terminal ++kill=terminal
 autocmd VimEnter * wincmd p
 
 let g:airline_theme='cool'
