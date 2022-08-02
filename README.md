@@ -10,8 +10,8 @@
 
 List of plugins:   
   Align  
-  VimCompletesMe
-  closetag  
+  VimCompletesMe 
+  closetag
   csv-vim  
   gundo  
   jedi-vim  
